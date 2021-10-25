@@ -8,16 +8,26 @@ class Tableau1 extends Phaser.Scene{
      */
     preload(){
         //bg 2 (tout au fond et très flou)
+        this.load.image('bg2-terrain-1', 'assets/level/background-2/bg2-terrain-1.png');
         this.load.image('bg2-terrain-2', 'assets/level/background-2/bg2-terrain-2.png');
-        this.load.image('bg2-tree-2', 'assets/level/background-2/bg2-tree-2.png');
+        for(let i=1;i<=3;i++){
+            this.load.image('bg2-tree-'+i, '/assets/level/background-2/bg2-tree-'+i+'.png');
+        }
 
         //bg 1 (gris légèrement flou)
         this.load.image('bg1-terrain-3', 'assets/level/background-1/bg-terrain-3.png');
+        this.load.image('bg1-terrain-1', 'assets/level/background-1/bg-terrain-1.png');
+        for(let i=1;i<=3;i++){
+            this.load.image('bg-tree'+i, '/assets/level/background-2/bg-tree-'+i+'.png');
+        }
 
         //ground (premier plan noir)
         this.load.image('gMid', 'assets/level/ground/g-mid.png');
         this.load.image('gRight', 'assets/level/ground/g-right.png');
-        this.load.image('gTree1', 'assets/level/ground/g-tree-1.png');
+        this.load.image('gLeft', 'assets/level/ground/g-left.png');
+        for(let i=1;i<=3;i++){
+            this.load.image('gTree'+i, 'assets/level/ground/g-tree-'+i+'.png');
+        }
 
         //au lieu d'écrire 5 lignes quasi identiques, on charge l'herbe avec une boucle
         // ALGO : ceci est une boucle
@@ -26,12 +36,15 @@ class Tableau1 extends Phaser.Scene{
         }
 
         //filtre film TODO élève : faire une boucle à la place des 3 lignes qui suivent
-        this.load.image('filterFilm1', 'assets/level/filters/film/frame-1.png');
-        this.load.image('filterFilm2', 'assets/level/filters/film/frame-2.png');
-        this.load.image('filterFilm3', 'assets/level/filters/film/frame-3.png');
+        for(let i=1;i<=3;i++){
+            this.load.image('filterFilm'+i, 'assets/level/filters/film/frame-'+i+'.png');
+        }
 
         //texture au fond  TODO élève : faire une boucle pour charger les 3 images et démontrer par la même que vous savez aller au plus simple
-        this.load.image('bg-animation-a', 'assets/level/background-2/bg-animation/bg-animation-a.png');
+        for(let i=1;i<=3;i++){
+            this.load.image('bg-animation-a', 'assets/level/background-2/bg-animation/bg-animation-'+i+'.png');
+        }
+
 
     }
 
@@ -109,7 +122,7 @@ class Tableau1 extends Phaser.Scene{
          * Terrain 2
          * @type {Phaser.GameObjects.Image}
          */
-        let gMid2=this.add.image(gMid1.x+gMid1.width+1,350, 'gMid').setOrigin(0,0); //on rajoute 1 px pour l'exemple
+        let gMid2=this.add.image(gMid1.x+gMid1.width,350, 'gMid').setOrigin(0,0); //on rajoute 1 px pour l'exemple
         this.groundContainer.add(gMid2);
         /**
          * Terrain 3
