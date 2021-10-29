@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b2c2cc-1121-4f5b-8c20-d31760ade361" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/level/background-2/bg-animation/bg-animation-a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/level/background-2/bg-animation/bg-animation-b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/level/background-2/bg-animation/bg-animation-c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tableau1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tableau1.js" afterDir="false" />
-    </list>
+    <list default="true" id="79b2c2cc-1121-4f5b-8c20-d31760ade361" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +38,9 @@
       <option name="presentableId" value="Default" />
       <updated>1635160550477</updated>
       <workItem from="1635160551832" duration="9717000" />
+      <workItem from="1635246880605" duration="802000" />
+      <workItem from="1635249873693" duration="2758000" />
+      <workItem from="1635322537385" duration="2768000" />
     </task>
     <servers />
   </component>
