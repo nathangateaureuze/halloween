@@ -155,6 +155,12 @@ class Tableau1 extends Phaser.Scene{
         this.groundContainer.add(gmushroom1);
         let gcrate=this.add.image(620,300, 'gcrate');
         this.groundContainer.add(gcrate);
+        let gvine1=this.add.image(600,100, 'gvine1');
+        this.groundContainer.add(gvine1);
+        let gvine2=this.add.image(550,100, 'gvine2');
+        this.groundContainer.add(gvine2);
+        let gvine3=this.add.image(500,100, 'gvine3');
+        this.groundContainer.add(gvine3);
 
         /**
          * Terrain 1
