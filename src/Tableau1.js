@@ -11,14 +11,14 @@ class Tableau1 extends Phaser.Scene{
         this.load.image('bg2-terrain-1', 'assets/level/background-2/bg2-terrain-1.png');
         this.load.image('bg2-terrain-2', 'assets/level/background-2/bg2-terrain-2.png');
         for(let i=1;i<=3;i++){
-            this.load.image('bg2-tree'+i, '/assets/level/background-2/bg2-tree-'+i+'.png');
+            this.load.image('bg2-tree'+i, 'assets/level/background-2/bg2-tree-'+i+'.png');
         }
 
         //bg 1 (gris légèrement flou)
         this.load.image('bg-terrain-3', 'assets/level/background-1/bg-terrain-3.png');
         this.load.image('bg-terrain-1', 'assets/level/background-1/bg-terrain-1.png');
         for(let i=1;i<=3;i++){
-            this.load.image('bg-tree'+i, '/assets/level/background-1/bg-tree-'+i+'.png');
+            this.load.image('bg-tree'+i, 'assets/level/background-1/bg-tree-'+i+'.png');
         }
 
         //ground (premier plan noir)
