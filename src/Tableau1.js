@@ -134,8 +134,10 @@ class Tableau1 extends Phaser.Scene{
          * @type {Phaser.GameObjects.Image}
          */
 
-        let gwater=this.add.image(600,500, 'gwater');
-        this.groundContainer.add(gwater);
+        let gwater1=this.add.image(400,500, 'gwater');
+        this.groundContainer.add(gwater1);
+        let gwater2=this.add.image(gwater1.x+gwater1.width,500, 'gwater');
+        this.groundContainer.add(gwater2);
         let gtree1=this.add.image(300,350, 'gTree1').setOrigin(0,1);
         gtree1.setTintFill(0xA1A1A1); // pratique pour dbugger
         this.groundContainer.add(gtree1);
@@ -156,43 +158,50 @@ class Tableau1 extends Phaser.Scene{
         let gcrate=this.add.image(620,300, 'gcrate');
         this.groundContainer.add(gcrate);
         let gvine1=this.add.image(600,100, 'gvine1');
+        //lianes
         this.groundContainer.add(gvine1);
         let gvine2=this.add.image(550,100, 'gvine2');
         this.groundContainer.add(gvine2);
         let gvine3=this.add.image(500,100, 'gvine3');
         this.groundContainer.add(gvine3);
-
         /**
-         * Terrain 1
+         * Terrain droite
          * @type {Phaser.GameObjects.Image}
          */
-        //ici on va calculer les positions
-        let gMid1=this.add.image(0,350, 'gMid').setOrigin(0,0);
-        this.groundContainer.add(gMid1);
+        let gLeft=this.add.image(756,350, 'gLeft').setOrigin(0,0);
+        this.groundContainer.add(gLeft);
         /**
-         * Terrain 2
+         * Terrain milieu
          * @type {Phaser.GameObjects.Image}
          */
-        let gMid2=this.add.image(gMid1.x+gMid1.width,350, 'gMid').setOrigin(0,0); //on rajoute 1 px pour l'exemple
-        this.groundContainer.add(gMid2);
+        let gMid=this.add.image(0,350, 'gMid').setOrigin(0,0);
+        this.groundContainer.add(gMid);
         /**
-         * Terrain 3
+         * Terrain droite
          * @type {Phaser.GameObjects.Image}
          */
-        let gMid3=this.add.image(gMid2.x+gMid2.width,350, 'gRight').setOrigin(0,0);
-        this.groundContainer.add(gMid3);
+        let gRight=this.add.image(gMid.x+gMid.width,350, 'gRight').setOrigin(0,0);
+        this.groundContainer.add(gRight);
         /**
          * De l'herbe en textures qui se répète
          * @type {Phaser.GameObjects.TileSprite}
          */
-        let grass=this.add.tileSprite(0,370,gMid3.x+gMid3.width-40,50,'g-grass-1').setOrigin(0,1)
-        this.groundContainer.add(grass);
+        let grass1=this.add.tileSprite(0,370,gRight.x+gRight.width-40,50,'g-grass-1').setOrigin(0,1)
+        this.groundContainer.add(grass1);
         /**
          * encore de l'herbe
          * @type {Phaser.GameObjects.TileSprite}
          */
-        let grass2=this.add.tileSprite(0,370,gMid3.x+gMid3.width-40,50,'g-grass-3').setOrigin(0,1)
+        let grass2=this.add.tileSprite(0,370,gRight.x+gRight.width-40,50,'g-grass-3').setOrigin(0,1)
         this.groundContainer.add(grass2);
+        /**
+         * l'herbe mais à droite
+         * @type {Phaser.GameObjects.TileSprite}
+         */
+        let grass3=this.add.tileSprite(756,370,gLeft.x-gLeft.width-40,50,'g-grass-1').setOrigin(0,1)
+        this.groundContainer.add(grass3);
+        let grass4=this.add.tileSprite(756,370,gLeft.x-gLeft.width-40,50,'g-grass-3').setOrigin(0,1)
+        this.groundContainer.add(grass4);
         /**
          * filtre type film au premier plan
          * @type {Phaser.GameObjects.Sprite}
