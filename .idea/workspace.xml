@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b2c2cc-1121-4f5b-8c20-d31760ade361" name="Changes" comment="" />
+    <list default="true" id="7714ce67-d7d2-4d98-8aca-fc2d68f37a54" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/level/background-1/bg-grass-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/level/weather/snow/frame-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/level/weather/snow/frame-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/level/weather/snow/frame-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tableau1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tableau1.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,40 +18,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1zzp0q7Y2TLrb1aN9QJ2MeOGtSh" />
+  <component name="ProjectId" id="20dXTwmEovEWUiEiPgCxXLEMK9q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="79b2c2cc-1121-4f5b-8c20-d31760ade361" name="Changes" comment="" />
-      <created>1635160550477</created>
+      <changelist id="7714ce67-d7d2-4d98-8aca-fc2d68f37a54" name="Changes" comment="" />
+      <created>1636375450648</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1635160550477</updated>
-      <workItem from="1635160551832" duration="9717000" />
-      <workItem from="1635246880605" duration="802000" />
-      <workItem from="1635249873693" duration="2758000" />
-      <workItem from="1635322537385" duration="2768000" />
-      <workItem from="1635523140212" duration="471000" />
-      <workItem from="1635523775603" duration="17000" />
-      <workItem from="1635533973889" duration="736000" />
-      <workItem from="1635605294860" duration="1772000" />
-      <workItem from="1635663702958" duration="1302000" />
-      <workItem from="1636290102891" duration="9745000" />
+      <updated>1636375450648</updated>
+      <workItem from="1636375452960" duration="7225000" />
     </task>
     <servers />
   </component>
