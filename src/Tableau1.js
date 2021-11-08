@@ -372,21 +372,6 @@ class Tableau1 extends Phaser.Scene{
         });
         this.filterFilm.play('film');
 
-        //pluie
-        this.rain = this.add.sprite(0, 0, 'rain').setOrigin(0,0);
-        //animation de 3 images
-        this.anims.create({
-            key: 'rain',
-            frames: [
-                {key:'rain1'},
-                {key:'rain2'},
-                {key:'rain3'},
-            ],
-            frameRate: 16,
-            repeat: -1
-        });
-        this.rain.play('rain');
-
         //neige
         this.snow = this.add.sprite(0, 0, 'snow').setOrigin(0,0);
         //animation de 3 images
@@ -402,6 +387,7 @@ class Tableau1 extends Phaser.Scene{
             frameRate: 16,
             repeat: -1
         });
+        this.snow.play('snow');
 
         //gestion du parallaxe
         /**
